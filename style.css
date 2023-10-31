@@ -5,7 +5,7 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
     color: white;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 .dot {
     position: absolute;
@@ -43,27 +43,36 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
-
+@keyFrames pageFade {
+  from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(10);
+      }
+  }
 #title {
     font-size: 81.8px;
     color: white;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
     margin-bottom: 20px;
 }
 
 #subtitle {
     font-size: 18.7px;
     color: white;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #buttons {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
     
 }
 
@@ -76,7 +85,7 @@ a {
     padding: 15px 0;
     margin: 10px;
     cursor: pointer;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 .button {
@@ -87,14 +96,14 @@ a {
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 .button-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 .button-column {
@@ -102,21 +111,21 @@ a {
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section2 {
     background-color: #000000;
     padding: 40px;
     text-align: center;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section2 #title {
     font-family: 'Neue Machina', sans-serif;
     font-size: 61.8px;
     color: white;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section2 #subtitle {
@@ -125,7 +134,7 @@ a {
     color: white;
     margin-top: 20px;
     line-height: 1.5;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section2 #metamask-button {
@@ -133,7 +142,7 @@ a {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section2 .button {
@@ -144,28 +153,28 @@ a {
     border: 1px solid white;
     padding: 15px 30px;
     cursor: pointer;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section2 .metamask-icon {
     margin-right: 10px;
     width: 20px;
     height: 20px;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section3 {
     background-color: #000000;
     padding: 40px;
     text-align: center;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section3 #title {
     font-family: 'Neue Machina', sans-serif;
     font-size: 61.8px;
     color: white;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section3 #subtitle {
@@ -175,7 +184,7 @@ a {
     margin-top: 20px;
     margin-bottom: 40px;
     line-height: 1.5;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section3 .feature {
@@ -183,14 +192,14 @@ a {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section3 .feature img {
     width: 80px;
     height: 80px;
     margin-right: 20px;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section3 .feature p {
@@ -198,14 +207,14 @@ a {
     font-size: 16px;
     color: white;
     line-height: 1.5;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section4 {
     background-color: #000000;
     padding: 40px;
     text-align: center;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section4 #title {
@@ -213,7 +222,7 @@ a {
     font-size: 61.8px;
     color: white;
     margin-bottom: 40px;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section4 #subtitle {
@@ -222,7 +231,7 @@ a {
     color: white;
     margin-top: 40px;
     margin-bottom: 40px;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section4 #contact-button .button {
@@ -235,7 +244,7 @@ a {
     cursor: pointer;
     margin-top: 40px;
     margin-bottom: 40px;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section4 #setup-instructions {
@@ -245,12 +254,12 @@ a {
     color: white;
     margin-top: 40px;
     margin-bottom: 40px;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 .instruction {
     margin: 10px 0;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
 
 #section4 #chrome-extension-button .button {
@@ -265,5 +274,5 @@ a {
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    animation: fadeIn 2s;
+    animation: pageFade 2s;
 }
