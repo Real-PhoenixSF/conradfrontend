@@ -37,7 +37,7 @@ a {
 
 #header {
     background: radial-gradient(circle at 2% 2%, transparent 50%, black 51%);
-    background-size: 25px 25px; /* Adjust the size of the dots as needed */
+    background-size: 25px 25px; 
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -50,6 +50,7 @@ a {
     font-size: 81.8px;
     color: white;
     animation: fadeIn 2s;
+    margin-bottom: 20px;
 }
 
 #subtitle {
